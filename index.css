@@ -35,17 +35,27 @@ nav{
   position: sticky;
   margin-right: 20px;
   margin-right: 20px;
+  text-align: center;
   
   
 }
 #inicio{
   border-radius: 5px;
+
+  color: aliceblue;
 }
 #jo{
   font-size: larger;
 }
+#inicio{
+  align-content: center;
+}
+
 #inicio:hover { 
 
   background: rgb(236, 199, 130); 
   
 } 
+#dropdown-autoclose-inside{
+  background-color: black;
+}
