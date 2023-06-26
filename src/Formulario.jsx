@@ -13,13 +13,12 @@ const Formulario = () => {
         console.log(data);
     }
     const incluirTelefono = watch('incluirTelefono');
-    return <div>
-        <h2>Formulario</h2>
-        <p>Nombre: {watch('nombre')}</p>
+    return <div className="login-form">
+        <h2>Registrar Usuario</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <label>Nombre</label>
-                <input type="text" {...register('nombre', {
+                <input className="input" type="text" {...register('nombre', {
                      required: true, 
                      maxLength: 10
                 })} />
@@ -28,20 +27,20 @@ const Formulario = () => {
             </div>
             <div>
                 <label>Dirección</label>
-                <input type="text" {...register('direccion', {
+                <input className="input" type="text" {...register('direccion', {
                       required: true, 
                 })} />
             </div>
             <div>
                 <label>Email</label>
-                <input type="text" {...register('email', {
+                <input className="input" type="text" {...register('email', {
                      pattern:  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                 })} />
                 {errors.email?.type === 'pattern' && <p>El formato del email es incorrecto</p>}
             </div>
             <div>
                 <label>Edad</label>
-                <input type="text" {...register('edad', {
+                <input className="input" type="text" {...register('edad', {
                     validate: edadValidator
                 })} />
                 {errors.edad && <p>La edad debe estar entre 18 y 65 años </p>}
@@ -56,16 +55,16 @@ const Formulario = () => {
             </div>
             <div>
                 <label>¿Incluir Télefono?</label>
-                <input type="checkbox" {...register('incluirTelefono')} />
+                <input className="input" type="checkbox" {...register('incluirTelefono')} />
             </div>
             { incluirTelefono && (
                 <div>
                 <label>Télefono</label>
-                <input type="text" {...register('telefono')} />
+                <input className="input" type="text" {...register('telefono')} />
             </div>
             )}
             
-            <input type="submit" value="Enviar"></input>
+            <input className="orange-btn" type="submit" value="Enviar"></input>
         </form>
     </div>
 }
