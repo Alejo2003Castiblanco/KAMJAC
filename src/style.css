@@ -4,16 +4,19 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     color: #000000;
-    background-color: #c2c2c2;
-
+    background-color: #FAFAFA;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
 }
 
 /* --  background image section  -- */
 
 .bg-img {
-    background-image: url('./img/fondo.jpg');
-    max-width: 100%;
-    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('./img/fondo.png');
+    width: 100%;
     left: 0;
     top: 0;
     right: 0;
@@ -24,14 +27,10 @@ body {
     background-attachment: fixed;
 }
 
-.bg-img .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    opacity: .5;
-    background: linear-gradient(to top left,#464646, #343435, #F18B2D,#F7B033);
+.t{
+    width: 100%;
+    margin-left: 40%;
+    margin-right: auto;
 }
 
 .tex {
@@ -99,7 +98,7 @@ a:hover, a:focus {
 }
 
 .white-text {
-    color: #fff;
+    color: #000000;
     letter-spacing: 10px;
 }
 
@@ -718,7 +717,7 @@ header {
 
 .detail{
     text-align: center;
-    color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
 }
 
 /*------------------------------------*\
