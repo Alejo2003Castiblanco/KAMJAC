@@ -16,7 +16,7 @@ function Carrusel() {
   return (
     <div>
       <p> hola</p>
-      <img src={REF_ALPHA} alt={"REF_ALPHA"}/>
+      //<img src={REF_ALPHA} alt={"REF_ALPHA"}/>
       <img src={REF_POLUX_SENCILLO} alt={"REF_POLUX_SENCILLO"}/>
       <img src={REF_ITALIA_MIXTO} alt={"REF_ITALIA_MIXTO"}/>
       
