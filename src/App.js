@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-function App() {
+
+import REF_ALPHA from './img/REF_ALPHA.jpg';
+import REF_POLUX_SENCILLO from './img/REF_POLUX_SENCILLO.jpg';
+import REF_ITALIA_MIXTO from './img/REF_ITALIA_MIXTO.jpg';
+
+
+
+
+
+
+function Carrusel() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p> hola</p>
+      <img src={REF_ALPHA} alt={"REF_ALPHA"}/>
+      <img src={REF_POLUX_SENCILLO} alt={"REF_POLUX_SENCILLO"}/>
+      <img src={REF_ITALIA_MIXTO} alt={"REF_ITALIA_MIXTO"}/>
+      
     </div>
+    
   );
+    
+  
 }
 
-export default App;
+export default Carrusel;
