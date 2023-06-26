@@ -1,17 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Formulario from './Formulario';
+import LoginForm from './LoginForm';
 import React from 'react';
-import Formulario1, { MiProveedor } from './Formulario1';
+import Formulario from './Formulario';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <MiProveedor>
+  
     <div className="App">
-     
-      <Formulario1/>
+      <LoginForm/>
       </div>
-    </MiProveedor>
+    
   );
 }
 
