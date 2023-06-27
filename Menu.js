@@ -5,6 +5,9 @@ import Myima from './favicon.png'
 function ColorSchemesExample() {
 
   return (
+
+    <body>
+    
     <nav>
       <Navbar bg="dark" variant="dark" id='jo'>
         <Container>
@@ -20,6 +23,15 @@ function ColorSchemesExample() {
       </Navbar>
       
     </nav>
+  <section>
+    
+  <h2>SOMOS DASAGA</h2>
+  <h3>MUEBLES & ACCESORIOS S.A.S.</h3>
+  <div id='po'>
+  <button id='porta'>Ir a Portafolio</button></div>
+   </section>
+   
+  </body>
   );
 }
 

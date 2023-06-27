@@ -1,7 +1,7 @@
-import Dropdown from 'react-bootstrap/Dropdown';
 import Container from 'react-bootstrap/Container';
-import Myima from './favicon.png'
+import Dropdown from 'react-bootstrap/Dropdown';
 import Navbar from 'react-bootstrap/Navbar';
+import Myima from './favicon.png';
 function AutoCloseExample() {
   return (
     <>
