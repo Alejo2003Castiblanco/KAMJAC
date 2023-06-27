@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import mi from'./REF. ALPHA.jpg'
 import mo from './REF. ITALIA MIXTO.jpg'
 import ma from './REF. POLUX SENCILLO.jpg'
-function ColorSchemesExample() {
+function Main() {
 
   return (
 
@@ -58,4 +58,4 @@ function ColorSchemesExample() {
   );
 }
 
-export default ColorSchemesExample;
+export default Main;
