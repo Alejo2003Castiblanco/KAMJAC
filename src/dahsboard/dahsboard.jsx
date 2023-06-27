@@ -1,29 +1,37 @@
 import React from "react";
-
+import Logo_dasaga_white from './Logo_dasaga_white.png';
 
 function Menu() {
 return (
-      <ul className='menu' id='menu'>
-          <li class="nav-li"><a href="principal.php">Mi cuenta<span class="fa fa-chevron-right"></span></a></li>
-          <li class="nav-li"><a><i class="fa fa-book"></i> Gestión Cotizacion <span class="fa fa-chevron-right"></span></a></li>
-          <ul class="menu">
-              <li><a href="Controlador.php?ruta=listarcotizacion&pag=0" class="nav-link">Lista de cotizaciones</a></li>
-              <li><a href="Controlador.php?ruta=mostrarInsertarcotizacion" class="nav-link">Agregar cotización</a></li>
+    <div className="primary-header">
+        <div className="navbar container">
+        <img src={Logo_dasaga_white} alt={"Logo_dasaga_white"} width={80}/>
+        <div className="Menu">
+        <ul className='menu' id='menu'>
+          <li className="nav-li"><a href="principal.php">Mi cuenta<span class="fa fa-chevron-right"></span></a></li>
+          <li className="nav-li"><i class="fa fa-book"></i> Gestión Cotizacion <span class="fa fa-chevron-right"></span></li>
           </ul>
-          <li class="nav-li"><a><i class="fa fa-edit"></i> Gestión Usuario <span class="fa fa-chevron-right"></span></a>
-              <ul class="menu">
+          <ul className="menu">
+              <li><a href="Controlador.php?ruta=listarcotizacion&pag=0" class="nav-link">Lista de cotizaciones</a></li>
+              <li><a href="Controlador.php?ruta=mostrarInsertarcotizacion" className="submenu">Agregar cotización</a></li>
+          </ul>
+          <li className="menu"><i class="fa fa-edit"></i> Gestión Usuario <span class="fa fa-chevron-right"></span>
+              <ul className="submenu">
                   <li><a href="Controlador.php?ruta=listarUsuario&pag=0" class="nav-link">Lista de usuarios</a></li>
-                  <li><a href="Controlador.php?ruta=mostrarInsertarUsuario" class="nav-link">Agregar usuario</a></li>
+                  <li><a href="Controlador.php?ruta=mostrarInsertarUsuario" className="submenu">Agregar usuario</a></li>
               </ul>
           </li>
-          <li class="nav-li"><a><i class="fa fa-table"></i> Gestión Accesorio <span class="fa fa-chevron-right"></span></a>
-              <ul class="menu">
+          <li className="menu"><i class="fa fa-table"></i> Gestión Accesorio <span class="fa fa-chevron-right"></span>
+              <ul className="submenu">
                   <li><a href="Controlador.php?ruta=listaraccesorio&pag=0" class="nav-link">Lista de accesorios</a></li>
-                  <li><a href="Controlador.php?ruta=mostrarInsertaraccesorio" class="nav-link">Agregar ccesorio</a></li>
+                  <li><a href="Controlador.php?ruta=mostrarInsertaraccesorio" className="submenu">Agregar ccesorio</a></li>
               </ul>
           </li>
               <a class="button"  href="Controlador.php?ruta=cerrarSesion"><i class="fa fa-sign-out pull-right"></i> Salir </a>
-      </ul>
+        </div>
+      </div>
+    </div>
+      
 
   )
 }
