@@ -1,7 +1,8 @@
 import React from 'react'
-import "../../style/options.css"
 
-const Barra = () => {
+
+
+function Barra () {
     return (
         <ul className='menu' id='menu'>
             <li class="nav-li"><a href="principal.php">Mi cuenta<span class="fa fa-chevron-right"></span></a></li>
