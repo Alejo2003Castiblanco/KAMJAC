@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-function Barra () {
+function Menu () {
     return (
         <ul className='menu' id='menu'>
             <li class="nav-li"><a href="principal.php">Mi cuenta<span class="fa fa-chevron-right"></span></a></li>
@@ -29,4 +29,4 @@ function Barra () {
     )
 }
 
-export default Barra
+export default Menu
