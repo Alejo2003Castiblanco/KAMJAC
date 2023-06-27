@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ColorSchemesExample from './Menu';
-import AutoCloseExample from './Main'
+import Main from './Menu';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +9,7 @@ import  ShapeExample from './Carru'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <ColorSchemesExample/>
+    <Main/>
   </div>
 );
 
