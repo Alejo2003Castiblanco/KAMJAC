@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import React from 'react';
 
 function App() {
