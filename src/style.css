@@ -179,6 +179,32 @@ ul, ol {
     filter: blur(30%);
   }
 
+  /* Submenu*/
+.submenu{
+    display: flex;
+    flex-direction: column;
+	position: absolute;
+    font-weight: bold;
+    color: #fff;
+	background: rgba(248, 121, 58, 0.532);
+	width: 35%;
+    margin-top: 10%;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
   .button{
     text-align: center;
     display: inline-block;

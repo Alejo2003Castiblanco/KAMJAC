@@ -33,7 +33,7 @@ const LoginForm = () => {
   <div className='navbar container'>
   <img src={Logo_dasaga_white} alt={"Logo_dasaga_white"} width={80}/>
 <ul className="menu" >
-  <Link to={'Login'}><a className="button" id='inicio'>Volver</a></Link>
+  <Link to={'/*'}><a className="button" id='inicio'>Volver</a></Link>
 </ul>
 </div>
 </nav>
@@ -62,9 +62,7 @@ const LoginForm = () => {
             required
           />
         </div>
-        <button className='orange-btn' type="submit">Iniciar sesión</button>
-
-      
+        <Link to={'/menu'}><button className='orange-btn' type="submit">Iniciar sesión</button></Link>
       </form>
     </div>
     </div>
