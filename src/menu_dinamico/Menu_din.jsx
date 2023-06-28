@@ -3,11 +3,11 @@ import App from "../App";
 
 function Menu_din(){
     return(
-<div className="menu_din">
               
         <div className="menu-container">
 			
 			<input type="checkbox" id="openmenu" className="hamburger-checkbox"/><div className="hamburger-icon">
+			  <div className="hamburguer-icon">
 			  <label for="openmenu" id="hamburger-label">
 				<span></span>
 				<span></span>
@@ -15,16 +15,19 @@ function Menu_din(){
 				<span></span>
 			  </label>    
 			</div>
+			<div className="menu-pane">
+			<nav>
             <ul class="menu-links">
-            <div className="nav_items" id="navitems">
-                <option value=""><a href="">COMPRAS 🛒</a></option>
-			    <option value=""><a href="">CHAT 💭</a></option>
-                  </div> 
+                <option value=""><a href="">Compras 🛒</a></option>
+			    <option value=""><a href="">Chat 💭</a></option>
                    </ul>
-        
+        </nav>
 		  </div>
-</div>
-
+			</div>
+			<div class="wrapper">
+				</div>
+				</div>
+				
     )                                                                                                                   
 }
 
